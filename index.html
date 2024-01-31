@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>budgetApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="principal">
+        <div class="container">
+            <div class="sous-container">
+                <!--budget-->
+                <div class="budget-total">
+                    <h3>Bugdet</h3>
+                    <p class="erreur cachee" id="budget-erreur">La valeur ne peut etre vide ou negative</p>
+                    <input type="number" id="total-amount" placeholder="Enter Total Amount"><br>
+                    <button class="submit" id="total-amount-button">Set budget</button>
+                </div>
+                <!--expenses-->
+                <div class="user-amount-container">
+                    <h3>Expenses</h3>
+                    <p class="erreur cachee" id="product-title-erreur">Values can be empty</p>
+                    <input type="text" class="product-title" id="product-title" placeholder="Enter Title Of Product"><br>
+                    <input type="number" id="user-amount" placeholder="Enter cost Of Product"><br>
+                    <button class="submit" id="check-amount">Check Amount</button>
+                </div>
+            </div>
+            <!--output-->
+            <div class="sous-container1 flex-space">
+                <div>
+                    <p>Budget Total</p>
+                    <span id="amount">0</span>
+                </div>
+
+                <div>
+                    <p>Expenses</p>
+                    <span id="expenses-values">0</span>
+                </div>
+
+                <div>
+                    <p>Balance</p>
+                    <span id="balance">0</span>
+                </div>
+            </div>
+            <!--List-->
+            <div class="sous-container2">
+                <h3>Expenses list</h3>
+                <div class="list-container" id="list"></div>
+            </div>
+        </div>
+        <!--list-->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
